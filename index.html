@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn" data-dropdown="nav">Navigation </button>
+            <div class="dropdown-content" id="dropdown-nav">
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="dropdown">
+        <button class="dropbtn" data-dropdown="social">Social </button>
+            <div class="dropdown-content" id="dropdown-social">
+                <a href="https://www.linkedin.com/in/sreyashee-sarkar-588521261/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Sreyashee" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="logo">
+            <button id="logo-btn">
+                <img src="p2.jpeg" alt="My Logo" />
+            </button>
+        </div>
+        <div id="image-modal">
+            <img src="p2.jpeg" alt="Enlarged Profile" />
+        </div>
+
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Sreyashee Sarkar</span></h1>
+            <p>A passionate MERN Stack Developer</p>
+            <div class="buttons">
+                <a href="resume_Sreyashee_final.pdf" download class="btn">Download CV</a>
+                <a href="#contact" class="btn outline">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>B.Tech in Computer Science and Engineering</h3>
+                    <p>Heritage Institute of Technology | 2022 – 2026</p>
+                    <p><strong>CGPA:</strong> 8.8 </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Higher Secondary (Class 12)</h3>
+                    <p>Delhi Public School, Siliguri | 2020 – 2022</p>
+                    <p><strong>Percentage:</strong> 94%</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Secondary (Class 10)</h3>
+                    <p>Auxilium Convent School, Siliguri | 2010 – 2020</p>
+                    <p><strong>Percentage:</strong> 97%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="images\html5.svg" alt="html" class="skill-logo"/>
+                <img src="images\css.svg" alt="css" class="skill-logo"  />
+                <img src="images\javascript.svg" alt="js" class="skill-logo"  />
+                <h3>HTML</h3>
+                <p>With 3+ years of experience, I have built 20+ projects using HTML, CSS and Javascript.</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/react.svg" alt="React" class="skill-logo"  />
+                <h3>React.js</h3>
+                <p>Built 15+ frontend projects using hooks, context API, and component-based architecture.</p>
+            </div>
+            <div class="skill-card">
+                <img src="images\nodedotjs.svg" alt="node.js" class="skill-logo" />
+                <h3>Node.js</h3>
+                <p>With experience of 3+ years, I have built server-side logic and APIs using Node.js for scalable backend applications.</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/express.svg" alt="express" class="skill-logo" />
+                <h3>Express.js</h3>
+                <p>Created RESTful APIs and middleware-based backend systems using Express.js.</p>
+            </div>    
+            <div class="skill-card">
+                <img src="images/mongodb.svg" alt="mongodb" class="skill-logo" />
+                <h3>MongoDB</h3>
+                <p>Designed and managed NoSQL databases using MongoDB for flexible and scalable data storage.</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/tailwindcss.svg" alt="Tailwind" class="skill-logo" />
+                <h3>Tailwind CSS</h3>
+                <p>Styled full responsive UIs using Tailwind’s utility-first approach for speed and scalability.</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/bootstrap.svg" alt="bootstrap" class="skill-logo" />
+                <h3>BootStrap</h3>
+                <p>Implemented clean and mobile-friendly layouts quickly using Bootstrap components.</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/github.svg" alt="Github" class="skill-logo" />
+                <h3>Github</h3>
+                <p>Used GitHub for version control, collaboration, and managing project repositories.</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/sqlite.svg" alt="SQL" class="skill-logo" />
+                <h3>SQL</h3>
+                <p>Wrote optimized SQL queries and designed normalized database schemas.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <a href="https://ultimate-tic-tac-toe-frontend.vercel.app/"><h3>Ultimate TicTacToe (Multiplayer)</h3></a>
+            <p class="date">June 2025</p>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <img src="images/react.svg" alt="React" />
+                    <small>React.js</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/nodedotjs.svg" alt="Node.js" />
+                    <small>Node.js</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/express.svg" alt="Express.js" />
+                    <small>Express.js</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/socketdotio.svg" alt="Express.js" />
+                    <small>Socket.io</small>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="images/vercel.svg" alt="Vercel" />
+                    <small>Vercel</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/render.svg" alt="Render" />
+                    <small>Render</small>
+                </div>
+            </div>
+            <p class="desc">A real-time multiplayer game with custom lobby system, move logic, and game state sync. It has proper state management system.</p>
+        </div>
+        <div class="project-card">
+            <a href="https://ultimate-tic-tac-toe-frontend.vercel.app/"><h3>3D Design Changer</h3></a>
+            <p class="date">June 2025</p>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <img src="images/react.svg" alt="React" />
+                    <small>React.js</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/threedotjs.svg" alt="Three.js" />
+                    <small>Three.js</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/nodedotjs.svg" alt="Node.js" />
+                    <small>Node.js</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/express.svg" alt="Express.js" />
+                    <small>Express.js</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/vercel.svg" alt="Vercel" />
+                    <small>Vercel</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/render.svg" alt="Render" />
+                    <small>Render</small>
+                </div>
+            </div>
+            <p class="desc">An interactive 3D customization tool built with Three.js that allows users to visualize and personalize a 3D shirt model in real-time by changing colors and uploading custom logos, offering a realistic product design experience.</p>
+        </div>
+
+        <div class="project-card">
+            <a href="https://github.com/Sreyashee/b2bTender"><h3>B2B-Tender Management</h3></a>
+            <p class="date">July 2025</p>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <img src="images/react.svg" alt="React" />
+                    <small>React.js</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/nodedotjs.svg" alt="Node.js" />
+                    <small>Node.js</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/express.svg" alt="Express.js" />
+                    <small>Express.js</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/supabase.svg" alt="supabase" />
+                    <small>Supabase</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/github.svg" alt="github" />
+                    <small>Github</small>
+                </div>
+            </div>
+        <p class="desc">A tender management platform where companies can publish tenders, apply, and manage proposals in real-time. It has proper state management and data is stored in database.</p>
+        </div>
+
+
+        <div class="project-card">
+            <a href="https://ju-frontend.vercel.app/"><h3>Grapher</h3></a>
+            <p class="date">April 2025</p>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <img src="images/react.svg" alt="React" />
+                    <small>React.js</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/nodedotjs.svg" alt="Node.js" />
+                    <small>Node.js</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/express.svg" alt="Express.js" />
+                    <small>Express.js</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/flask.svg" alt="flask" />
+                    <small>Flask</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/python.svg" alt="python" />
+                    <small>Python</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/vercel.svg" alt="Vercel" />
+                    <small>Vercel</small>
+                </div>
+                <div class="tech-item">
+                    <img src="images/render.svg" alt="Render" />
+                    <small>Render</small>
+                </div>
+            </div>
+        <p class="desc">A simple project that extracts data from csv file and converts it into bar graphs and pie chart and provide analytics information.</p>
+        </div>
+
+    </div>
+    </section>
+
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>Ementora</h3>
+        <p><em>Web Developer Intern | July 2025 - Present</em></p>
+        <ul>
+          <li>Worked on enhancing and developing the company’s website.</li>
+          <li>Led the frontend team, focusing on performance and reliability.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>Ceeras</h3>
+        <p><em>Full Stack Developer Intern | Feb 2025 - April 2025</em></p>
+        <ul>
+          <li>Created the SRS and planned architecture for their platform.</li>
+          <li>Built working prototypes and iterated on user feedback.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>Beep TechnoServices Pvt Limited</h3>
+        <p><em>Campus Ambassador | April 2025 - June 2025</em></p>
+        <ul>
+          <li>Organized awareness sessions to promote company objectives.</li>
+          <li>Boosted outreach and helped achieve a 20% sales increase.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Contact -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-card">
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+
+  <footer>
+    <p>© 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
